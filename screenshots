@@ -11,4 +11,5 @@ docker stop my-node-container
 
 # Remove container
 docker rm my-node-container
-
+BufferedImage screenFullImage = robot.createScreenCapture(screenRect);
+ImageIO.write(screenFullImage, "png", new File("file:///Users/nathanryanmcdonald/Downloads/Node%20Image%20Sep%2029,%202025%20at%2001_37_58%20PM.png"));
