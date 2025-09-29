@@ -1,13 +1,8 @@
 const express = require('express');
-const app = express();
-const api = require('./api');
+const router = express.Router();
 
-app.use('/api', api);
-
-app.get('/', (req, res) => {
-  res.send('<h1>Docker Node.js App Running!</h1>');
+router.get('/status', (req, res) => {
+  res.json({ status: 'success', message: 'API is running!' });
 });
 
-app.listen(3000, () => {
-  console.log('App listening on port 3000');
-});
+module.exports = router;
